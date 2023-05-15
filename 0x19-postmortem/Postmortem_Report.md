@@ -3,7 +3,7 @@
 ## 505 Error While sending an email
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/MitaliSengupta/holberton-system_engineering-devops/master/0x19-postmortem/image.gif" width=100% height=100% />
+<img src="https://github.com/ogungbile/alx-system_engineering-devops/blob/master/0x19-postmortem/email_error_01.jpg?raw=true" width=100% height=100% />
 </p>
 
 ### Incident report for Email failed to send
@@ -14,14 +14,14 @@ On February 24, 2023 at noon, users encountered issues with outgoing mails as th
 
 #### Timeline
 
-- **12:00 ** -550 Error for anyone trying to send mail
-- **12:01 ** -Ensuring configuration settings on the mail client(outlook) is correct. 
-- **12:04 ** -Telnet to the mail server(mail.cobranet.ng) on port 587 and 25 failed to connect
-- **12:07 ** -Pings and nslookup to the mail server resolved to the same IP address(80.89.176.226)
-- **12:10 ** -under blacklist tab on mxtoolbox.com, the client IP address was observed to be blacklisted(RATS)
-- **12:14 ** -The client public address was changed to a new one to fix issue and client was advised to follow up with their host in order to whitelist the old IP. Users were further advised to scan their computer systems with anti malware program in order to forestall a re-occurrence.
-- **12:20 ** -Users ran anti-malware scan on all of their systems
-- **12:23 ** -Users can send out mails successfully 
+- 12:00  -550 Error for anyone trying to send mail
+- 12:01  -Ensuring configuration settings on the mail client(outlook) is correct. 
+- 12:04  -Telnet to the mail server(mail.cobranet.ng) on port 587 and 25 failed to connect
+- 12:07  -Pings and nslookup to the mail server resolved to the same IP address(80.89.176.226)
+- 12:10  -under blacklist tab on mxtoolbox.com, the client IP address was observed to be blacklisted(RATS)
+- 12:14  -The client public address was changed to a new one to fix issue and client was advised to follow up with their host in order to whitelist the old IP. Users were further advised to scan their computer systems with anti malware program in order to forestall a re-occurrence.
+- 12:20 ** -Users ran anti-malware scan on all of their systems
+- 12:23 ** -Users can send out mails successfully 
 
 
 #### Root Cause and Resolution
